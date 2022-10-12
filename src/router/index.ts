@@ -5,7 +5,7 @@ import About from '../pages/About/index';
 export const routeConfig = [
     {
         path: '/',
-        component: App,
+        element: App,
         indexRoute: { component: Home },
         childRoutes: [
             { path: 'about', component: About }

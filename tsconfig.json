@@ -4,6 +4,7 @@
         "outDir": "dist",
         "target": "es6",
         "module": "ESNext",
+        "sourceMap": true,
         "allowJs": true,
         "skipLibCheck": true,
         "esModuleInterop": true,

@@ -1,13 +1,21 @@
 import ReactDOM from "react-dom/client";
 import { routeConfig } from "./router/index";
-import { Router } from 'react-router';
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Route,
+} from "react-router-dom";
+import React from "react";
 
-const node = document.querySelector("#root")
-console.log('node:', node)
-let root;
+const router = createBrowserRouter(routeConfig);
+const node = document.querySelector("#root");
 if (node) {
-    root = ReactDOM.createRoot(node);
-    root.render(<Router routes={routeConfig} />);
+    ReactDOM.createRoot(node).render(
+        <React.StrictMode>
+            <RouterProvider router={router} />
+        </React.StrictMode>
+    );
 } else {
     console.error('React没有找到root根节点')
 }
+
