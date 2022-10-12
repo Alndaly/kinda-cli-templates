@@ -1,0 +1,28 @@
+// This file would not be included while complieing, it's just for a better coding experience.
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "es6",
+        "module": "ESNext",
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react",
+        "baseUrl": "src",
+        "paths": {
+            "@/*": [
+                "./*"
+            ]
+        },
+        "experimentalDecorators": true
+    },
+    "include": [
+        "src",
+        "css.d.ts" //配置的.d.ts文件
+    ]
+}
