@@ -2,8 +2,8 @@ import ReactDOM from "react-dom/client";
 import { routeConfig } from "./router/index";
 import { Router } from 'react-router';
 
-
-const node = document.getElementById("root")
+const node = document.querySelector("#root")
+console.log('node:', node)
 let root;
 if (node) {
     root = ReactDOM.createRoot(node);
