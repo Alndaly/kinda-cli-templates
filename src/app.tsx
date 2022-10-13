@@ -1,7 +1,11 @@
 import React from "react";
+import { Outlet } from "../node_modules/react-router-dom/dist/index";
 
 export default () => {
     return (
-        <h1>111</h1>
+        <>
+            <h2>111</h2>
+            <Outlet />
+        </>
     )
 }

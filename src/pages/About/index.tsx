@@ -2,6 +2,6 @@ import React from "react";
 
 export default () => {
     return (
-        <h1>222</h1>
+        <h2>222</h2>
     )
 }
