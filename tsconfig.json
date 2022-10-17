@@ -15,11 +15,11 @@
         "noEmit": true,
         "jsx": "react",
         "baseUrl": "src",
-        // "paths": {
-        //     "@/*": [
-        //         "./*"
-        //     ]
-        // },
+        "paths": {
+            "@/*": [
+                "./*"
+            ]
+        },
         "experimentalDecorators": true
     },
     "include": [
